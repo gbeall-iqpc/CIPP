@@ -40,7 +40,6 @@ const reduceChildRoutes = ({ acc, depth, item, pathname }) => {
         key={item.title}
         openImmediately={partialMatch}
         path={item.path}
-        scope={item.scope}
         title={item.title}
       >
         <Stack
@@ -69,7 +68,6 @@ const reduceChildRoutes = ({ acc, depth, item, pathname }) => {
         icon={item.icon}
         key={item.title}
         path={item.path}
-        scope={item.scope}
         title={item.title}
       />
     );

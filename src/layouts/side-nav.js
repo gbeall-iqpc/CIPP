@@ -61,7 +61,6 @@ const reduceChildRoutes = ({ acc, collapse, depth, item, pathname }) => {
         key={item.title}
         openImmediately={item.openImmediately}
         path={item.path}
-        scope={item.scope}
         title={item.title}
         type={item.type}
       >
@@ -93,7 +92,6 @@ const reduceChildRoutes = ({ acc, collapse, depth, item, pathname }) => {
         icon={item.icon}
         key={item.title}
         path={item.path}
-        scope={item.scope}
         title={item.title}
       />,
     );

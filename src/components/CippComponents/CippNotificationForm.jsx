@@ -57,7 +57,7 @@ export const CippNotificationForm = ({
         .filter(Boolean);
 
       const Severity = listNotificationConfig.data?.Severity?.map((sev) =>
-        severityTypes.find((stype) => stype.value === sev),
+        severityTypes.find((stype) => stype.value === sev)
       ).filter(Boolean);
 
       formControl.reset({
@@ -142,7 +142,7 @@ export const CippNotificationForm = ({
               <Button
                 variant="outlined"
                 onClick={notificationDialog.handleOpen}
-                disabled={formState.isDirty && !formState.isSubmitSuccessful}
+                disabled={formState.isDirty}
               >
                 Send Test Alert
               </Button>
